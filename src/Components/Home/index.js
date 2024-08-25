@@ -24,7 +24,7 @@ const Home = () => {
     setError('');
     try {
       const parsedInput = JSON.parse(input);
-      const res = await axios.post('http://localhost:3001/bfhl', parsedInput, {
+      const res = await axios.post('https://bajaj-backend-final.vercel.app/bfhl', parsedInput, {
         headers: {
           'Content-Type': 'application/json',
         },
